@@ -35,7 +35,7 @@ app.get('/api/imageSearch/:searchValue*', function (req, res) {
 
     var data = new searchTerm({
         term: searchValue,
-        when: new Date().toUTCString()
+        when: new Date().toISOString()
     });
 
     data.save(function (err) {
