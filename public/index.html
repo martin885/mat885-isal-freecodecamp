@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="shortUrlApp">
+<html lang="en">
+
 <head>
     <title>Image Search Abstraction Layer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container">
         <h1 class="header">
@@ -16,27 +18,33 @@
             <ul>3) I can get a list of the most recently submitted search strings.</ul>
         </blockquote>
         <h3>Example usage:</h3>
-        <code>https://mat885-isal-freecodecamp.glitch.me/api/imageSearch/Dragons?offset=1</code><br>
+        <code>https://mat885-isal-freecodecamp.glitch.me/api/imageSearch/robots?offset=1</code>
+        <br>
         <h3>Example output:</h3>
-        <code>
-            {
-                "url": "https://ichef.bbci.co.uk/news/660/cpsprodpb/1999/production/_92935560_robot976.jpg",
-                "snippet": "Could robots be marking your homework? - BBC News",
-                "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqmiiixqjQ4lVNfTgXZB6EivtowcgJf548xr4aKKUGq0JtKSYweHz-g-nN",
-                "context": "http://www.bbc.com/news/business-38289079"
-              }
-        </code>
+        <pre>
+       
+        {
+         "url": "https://ichef.bbci.co.uk/news/660/cpsprodpb/1999/production/_92935560_robot976.jpg"
+         "snippet": "Could robots be marking your homework? - BBC News"
+         "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqmiiixqjQ4lVNfTgXZB6EivtowcgJf548xr4aKKUGq0JtKSYweHz-g-nN"
+         "context": "http://www.bbc.com/news/business-38289079"
+        }
+        
+    </pre>
+        <br>
         <h3>Example usage:</h3>
         <code>https://mat885-isal-freecodecamp.glitch.me/api/recentSearch</code>
+        <br>
         <h3>Example output:</h3>
-        <code>
-            
+        <pre>
             {
-                "term": "robots",
+                "term": "robots"
                 "when": "2018-01-16T23:56:01.365Z"
-              }
-        </code>
+            }
+            </pre>
+        <br>
     </div>
 
 </body>
+
 </html>
