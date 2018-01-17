@@ -32,6 +32,10 @@ app.get('/api/imageSearch/:searchValue*', function (req, res) {
 
     var searchValue = req.params.searchValue;
     var offset = req.query.offset || 1;
+if(offset===0){
+    offset=1;
+}
+
 
     var data = new searchTerm({
         term: searchValue,
